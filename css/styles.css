@@ -427,14 +427,14 @@ img {
 @media screen and (min-width: 768px) {
   .team-section {
     text-align: center;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding: 96px 0;
+    padding: 96px 92px;
   }
   .team-list {
     display: flex;
+    column-gap: 24px;
+    row-gap: 64px;
+    flex-wrap: wrap;
     flex-direction: row;
-    gap: 64px 24px;
   }
   .team-item {
     width: calc((100% - 24px) / 2);
@@ -447,7 +447,14 @@ img {
   }
   .team-list {
     display: flex;
+    flex-wrap: nowrap;
     gap: 24px;
+
+    /* width: calc((100%-72px) / 4);
+  display: flex;
+  gap: 24px; */
+    padding: 0;
+    padding-bottom: 0px;
   }
   .team-item {
     width: calc((100%-72px) / 4);
