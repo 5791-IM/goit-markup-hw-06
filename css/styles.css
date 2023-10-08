@@ -188,10 +188,10 @@ img {
 /* Main */
 
 /* Start hero section */
+
 .hero-section {
-  max-width: 1440px;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  max-width: 320px;
+  padding: 72px 0;
   margin: 0 auto;
   background-image: linear-gradient(
       to bottom,
@@ -204,17 +204,17 @@ img {
   background-color: var(--navyblue, #2e2f42);
   background-size: cover;
 }
-
 .hero-title-container {
   margin: 0 auto;
-  margin-bottom: 48px;
-  max-width: 496px;
-  color: var(--white, #fff);
+  max-width: 288px;
+  color: var(--WHITE, #fff);
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
 }
 .hero-action {
   display: flex;
@@ -241,6 +241,33 @@ img {
 .hero-action-button:hover,
 .hero-action-button:focus {
   background: var(--ocean, #404bbf);
+}
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    max-width: 768px;
+    padding: 112px 0;
+  }
+  .hero-title-container {
+    max-width: 496px;
+    margin-bottom: 36px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+}
+/* Dasctop */
+
+@media screen and (min-width: 1158px) {
+  .hero-section {
+    max-width: 1440px;
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+  .hero-title-container {
+    margin-bottom: 48px;
+  }
 }
 
 /* End Hero section */
@@ -294,7 +321,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-
+/* Tablet */
 @media screen and (min-width: 768px) {
   .advantage-list {
     display: flex;
@@ -309,7 +336,7 @@ img {
     align-self: first baseline;
   }
 }
-
+/* Desctop */
 @media screen and (min-width: 1158px) {
   .advantage-section {
     padding: 120px 0;
@@ -423,7 +450,7 @@ img {
 .team-icon {
   fill: #f4f4fd;
 }
-
+/* Tablet */
 @media screen and (min-width: 768px) {
   .team-section {
     text-align: center;
@@ -440,7 +467,7 @@ img {
     width: calc((100% - 24px) / 2);
   }
 }
-
+/* Desctop */
 @media screen and (min-width: 1158px) {
   .team-section {
     padding: 120px 0;
@@ -449,10 +476,6 @@ img {
     display: flex;
     flex-wrap: nowrap;
     gap: 24px;
-
-    /* width: calc((100%-72px) / 4);
-  display: flex;
-  gap: 24px; */
     padding: 0;
     padding-bottom: 0px;
   }
